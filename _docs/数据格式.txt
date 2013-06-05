@@ -1,4 +1,4 @@
-{name:'球队名', rank:'1', match:[
-{date:'20130505', score:'1@2', host:'1', goal:[{name:'a', time:'45:45'},{name:'b', time:'50:45'}]}, 
-{date:'20130605', score:'1@2', host:'0', goal:[{name:'a', time:'45:45'},{name:'b', time:'50:45'}]}
+{name:'球队名', match:[
+{date:'20130505', score:'1@2', rank:'1', host:'1', goal:[{name:'a', time:'45:45'},{name:'b', time:'50:45'}]}, 
+{date:'20130605', score:'1@2', rank:'2', host:'0', goal:[{name:'a', time:'45:45'},{name:'b', time:'50:45'}]}
 ]}
