@@ -1,0 +1,13 @@
+
+php_scripts里的文件用来在数据库中生成一个有所有英超球队名称的表
+即clubs表，ruby脚本会从这个表中读取球队名称的简写，从而构造用于抓取网页的URL，即man－city-vs-man-utd这种
+*** LOCAL GEMS ***
+
+bundler (1.3.5)
+bundler-unload (1.0.1)
+mini_portile (0.5.0)
+mysql2 (0.3.11)
+nokogiri (1.6.0)
+rake (10.0.4)
+rubygems-bundler (1.2.0)
+rvm (1.11.3.8)

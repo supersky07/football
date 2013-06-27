@@ -1,0 +1,22 @@
+<?php
+$clubs=file('england');
+$mysqli=new mysqli('localhost','root','abc123','football');
+if($mysqli->errno)
+	echo $mysqli->error;
+foreach($clubs as $club){
+	//echo $club;
+	list($full_name,$short_name)=explode('~',$club);
+	$full_name=trim($full_name);
+	$full_name=substr($full_name,2);
+	$full_name=trim($full_name);
+	$short_name=trim($short_name);
+	$query="insert into clubs(full_name,short_name)values('$full_name','$short_name')";
+	echo $query;
+	echo "\n";
+	//echo $short_name;
+	$result=$mysqli->query($query);
+	echo $mysqli->error;
+	echo $result;
+}
+$mysqli->close();
+?>
