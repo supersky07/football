@@ -1,0 +1,9 @@
+<?php
+require_once "/var/www/front/football/path.php";
+require_once BASEPATH."models/match_data/team.php";
+$team_name=$_POST["team_name"];
+if(!$team_name){
+	exit("empty team name");
+}
+echo matches_result($team_name);
+?>
