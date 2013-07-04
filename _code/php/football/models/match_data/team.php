@@ -1,5 +1,4 @@
 <?php
-require_once "/var/www/front/football/path.php";
 require_once BASEPATH.'db/connect.php';
 function matches_result($team_name){
 	$mysqli=load_db();

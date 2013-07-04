@@ -1,0 +1,5 @@
+首先在controllers/path.php中指定工程根目录的绝对地址
+然后在db文件夹的connect.php中指定数据库的参数：用户名、密码...
+在controllers中的team_data.php即是获取比赛数据的控制器，它接受参数$team_name，调用了一个模型里的函数通过球队名称来获取比赛数据
+这里的球队名称是指数据库里的short_name
+先导入数据库再使用

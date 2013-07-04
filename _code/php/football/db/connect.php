@@ -1,6 +1,10 @@
 <?php
 function load_db(){
-	$football = new mysqli("localhost","root","abc123","football");
+	$host="";
+	$username="";
+	$password="";
+	$db_name="";
+	$football = new mysqli("$host","$username","$password","$db_name");
 	if($football->errno){
 		$football->error;
 		echo " failed to connect to db :"."\n".$football->error;

@@ -47,5 +47,4 @@ function matches_result($team_name){
 	$json["data"]=$matches;
 	return json_encode($json);
 }
-echo matches_result("man utd");
 ?>
