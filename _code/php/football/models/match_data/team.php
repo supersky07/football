@@ -8,7 +8,7 @@ function matches_result($team_name){
 	        FROM matches m
 		INNER JOIN team home ON m.home_team = home.tid
 		INNER JOIN team away ON m.away_team = away.tid
-		INNER JOIN goals g ON g.mid = m.mid
+		LEFT OUTER JOIN goals g ON g.mid = m.mid
 		INNER JOIN players p ON p.pid = g.pid
 		WHERE home.short_name = 'man utd'
 		OR away.short_name = '$team_name'
